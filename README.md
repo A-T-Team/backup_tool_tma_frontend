@@ -1,46 +1,87 @@
-# Getting Started with Create React App
+# Network Device Backup Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Network Device Backup Manager is a web application built with TypeScript, React, Java, Spring Boot, and MySQL. It allows users to manage backups of network devices, such as Cisco devices.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- View a list of network devices
+- Add new devices to the list
+- Display device details including device name, IP address, vendor, connection status, and last backup time
+- Edit device information
+- Delete devices from the list
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Frontend**: React, TypeScript, Redux (soon to be added), React Bootstrap, Styled Components
+- **Backend**: Java, Spring Boot, MySQL (database server)
+- **API**: Fetch API (for making HTTP requests)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To get started with the Network Device Backup Manager, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
 
-### `npm run build`
+front end repo: https://github.com/A-T-Team/backup_tool_tma_frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```
+   git clone https://github.com/A-T-Team/backup_tool_tma_frontend.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install the frontend dependencies:
+   ```
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the frontend development server:
+   ```
+   npm start
+   ```
 
-### `npm run eject`
+4. Open the application in your web browser:
+   ```
+   http://localhost:3000
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Backend
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+backend repo: https://github.com/A-T-Team/IOS_BACKUP
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Clone the repository (if you haven't done so already):
+   ```
+   git clone https://github.com/A-T-Team/IOS_BACKUP.git
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. Open the `backend` directory:
+   ```
+   cd backend
+   ```
 
-## Learn More
+3. Install the backend dependencies and build the project:
+   ```
+   mvn clean install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Start the backend server:
+   ```
+   mvn spring-boot:run
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+By default, the backend server will run on `http://localhost:8080`.
+
+## Contribution
+
+Contributions to the Network Device Backup Manager are welcome! If you find any bugs or have suggestions for new features, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Feel free to customize the sections and provide more detailed information about your project as needed. Add any additional setup instructions or information specific to your backend implementation using Java and Spring Boot.
+
+Remember to replace `your-username` and `your-repo` with your GitHub username and repository name.
+
+I hope this updated README helps you provide a comprehensive overview of your project!
