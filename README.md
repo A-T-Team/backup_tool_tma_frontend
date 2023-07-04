@@ -77,11 +77,3 @@ Contributions to the Network Device Backup Manager are welcome! If you find any 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-Feel free to customize the sections and provide more detailed information about your project as needed. Add any additional setup instructions or information specific to your backend implementation using Java and Spring Boot.
-
-Remember to replace `your-username` and `your-repo` with your GitHub username and repository name.
-
-I hope this updated README helps you provide a comprehensive overview of your project!
