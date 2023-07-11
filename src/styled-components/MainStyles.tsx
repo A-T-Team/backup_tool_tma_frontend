@@ -12,7 +12,6 @@ export const DeviceListContainer = styled.div`
   margin-right: 80px;
   width: calc(100% - 160px);
   border: 1px solid #2A3A50;
-  
 `;
 
 export const ListHeaderContainer = styled(Row)`
