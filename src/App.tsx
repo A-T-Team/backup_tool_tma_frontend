@@ -7,8 +7,9 @@ import Navbar from "./components/Navbar";
 
 function App() {
     const AppContainer = styled(Container)`
-      //padding: 20px;
       background: #18202C;
+      min-height: 100%;
+      padding: 12px;
     `;
 
     return (

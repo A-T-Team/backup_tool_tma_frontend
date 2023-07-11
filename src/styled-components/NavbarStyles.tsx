@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Col, Container} from "react-bootstrap";
+import {Col} from "react-bootstrap";
 
 export const NavContainer = styled.div`
   display: flex;

@@ -15,5 +15,5 @@ export const StyledButton = styled(Button)`
 
 export const H1 = styled.h1`
     color: #fff;
-  display: inline;
+    display: inline;
 `;

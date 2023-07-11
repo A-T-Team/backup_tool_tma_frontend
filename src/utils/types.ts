@@ -1,10 +1,22 @@
 export interface Device {
-    id: string;
-    vendorIcon: {icon: string};
-    deviceName: string;
-    ipAddress: string;
+    id: number;
+    // vendorIcon: {icon: string};
+    name: string;
     vendor: string;
-    connectionStatus: string;
-    lastBackup: string;
+    ip: string;
+    port: number;
+    user: string;
+    password: string;
+    // connectionStatus: string;
+    // lastBackup: string;
 }
 
+export interface Device2 {
+    id: number,
+    name: String,
+    vendor: String,
+    ip: String,
+    port: number,
+    user: String,
+    password: String
+}

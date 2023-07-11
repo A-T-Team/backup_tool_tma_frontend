@@ -4,24 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0628a0ee-e643-457f-84b7-4eb65011181d" name="Changes" comment="added MIT license">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styled-components/AddDeviceModalStyles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styled-components/DeviceItemStyles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styled-components/HeaderStyles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styled-components/MainStyles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styled-components/NavbarStyles.tsx" afterDir="false" />
+    <list default="true" id="0628a0ee-e643-457f-84b7-4eb65011181d" name="Changes" comment="stage 1">
+      <change afterPath="$PROJECT_DIR$/src/assets/arista_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/dell_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/hp_icon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddDeviceModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddDeviceModal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DeviceItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeviceItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddDeviceModal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styled-components/HeaderStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled-components/HeaderStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styled-components/MainStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled-components/MainStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styled-components/NavbarStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled-components/NavbarStyles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/deviceContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/deviceContext.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -81,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688326899979</updated>
       <workItem from="1688326901001" duration="28570000" />
-      <workItem from="1689071477695" duration="4683000" />
+      <workItem from="1689071477695" duration="22855000" />
     </task>
     <task id="LOCAL-00001" summary="added MIT license">
       <created>1688482024337</created>
@@ -97,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688482104205</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="stage 1">
+      <created>1689076196002</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689076196002</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +131,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added MIT license" />
-    <option name="LAST_COMMIT_MESSAGE" value="added MIT license" />
+    <MESSAGE value="stage 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="stage 1" />
   </component>
 </project>

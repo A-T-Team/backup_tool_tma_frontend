@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
-import { Modal, Button, Form, Row, Col } from 'react-bootstrap';
+import React, {useState} from 'react';
+import {Modal, Button, Form, Row, Col} from 'react-bootstrap';
 import {DarkModal} from "../styled-components/AddDeviceModalStyles";
+import {ip, port, vendorsLabels} from "../utils/constants";
 
 // @ts-ignore
-const AddDeviceModal = ({ show, onHide }) => {
+const AddDeviceModal = ({show, onHide,onAddDevice}) => {
     const [vendor, setVendor] = useState('');
     const [ipAddress, setIpAddress] = useState('');
     const [sshPort, setSshPort] = useState('');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [deviceName, setDeviceName] = useState('');
 
 
     const handleClose = () => {
@@ -17,15 +19,36 @@ const AddDeviceModal = ({ show, onHide }) => {
         setSshPort('');
         setUsername('');
         setPassword('');
+        setDeviceName('');
         onHide();
     }
     const handleAddDevice = () => {
         // Handle adding the new device
-        console.log('Vendor:', vendor);
-        console.log('IP Address:', ipAddress);
-        console.log('SSH Port:', sshPort);
-        console.log('Username:', username);
-        console.log('Password:', password);
+        fetch(`http://${ip}:${port}/api/devices`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    "name": deviceName,
+                    "vendor": vendor,
+                    "ip": ipAddress,
+                    "port": sshPort,
+                    "user": username,
+                    "password": password
+                })
+            }
+        )
+            .then(res => {
+                if (res.ok) {
+                    return res.json();
+                } else {
+                    throw new Error('Failed to add device');
+                }
+            })
+            .then(data => onAddDevice(data))
+            .catch(error => console.log(error));
+
 
         // Clear the form fields
         setVendor('');
@@ -33,7 +56,7 @@ const AddDeviceModal = ({ show, onHide }) => {
         setSshPort('');
         setUsername('');
         setPassword('');
-
+        setDeviceName('');
         // Close the modal
         onHide();
     };
@@ -58,9 +81,11 @@ const AddDeviceModal = ({ show, onHide }) => {
                             onChange={(e) => setVendor(e.target.value)}
                         >
                             <option value="">Select Vendor</option>
-                            <option value="Cisco">Cisco</option>
-                            <option value="Juniper">Juniper</option>
-                            <option value="HP">HP</option>
+                            {vendorsLabels.map((v, i) => <option key={i} value={v}>{v}</option>)}
+
+                            {/*<option value="Cisco">Cisco</option>*/}
+                            {/*<option value="Juniper">Juniper</option>*/}
+                            {/*<option value="HP">HP</option>*/}
                             {/* Add more vendor options */}
                         </Form.Control>
                     </Form.Group>
@@ -81,7 +106,7 @@ const AddDeviceModal = ({ show, onHide }) => {
                             <Form.Group controlId="sshPort">
                                 <Form.Label>SSH Port</Form.Label>
                                 <Form.Control
-                                    type="text"
+                                    type="number"
                                     placeholder="Enter SSH Port"
                                     value={sshPort}
                                     onChange={(e) => setSshPort(e.target.value)}
@@ -110,6 +135,16 @@ const AddDeviceModal = ({ show, onHide }) => {
                             onChange={(e) => setPassword(e.target.value)}
                             className="white-placeholder"
                             autoComplete="current-password"
+                        />
+                    </Form.Group>
+                    <Form.Group controlId="deviceName">
+                        <Form.Label>Device name</Form.Label>
+                        <Form.Control
+                            type="text"
+                            placeholder="Enter Device name"
+                            value={deviceName}
+                            onChange={(e) => setDeviceName(e.target.value)}
+                            className="white-placeholder"
                         />
                     </Form.Group>
                 </Form>
