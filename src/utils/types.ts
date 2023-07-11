@@ -7,3 +7,4 @@ export interface Device {
     connectionStatus: string;
     lastBackup: string;
 }
+

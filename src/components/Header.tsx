@@ -1,10 +1,16 @@
 import React from 'react';
+import {HeaderWrapper, H1,StyledButton} from "../styled-components/HeaderStyles";
 
-const Header = () => {
+interface Props {
+    onHide: () => void;
+}
+const Header: React.FC<Props> = ({ onHide }) => {
+
     return (
-        <div>
-            
-        </div>
+        <HeaderWrapper>
+            <H1>Devices</H1>
+            <StyledButton onClick={onHide} variant="primary">Add Device</StyledButton>
+        </HeaderWrapper>
     );
 };
 
