@@ -7,7 +7,7 @@ import {ip, port, vendorsLabels} from "../utils/constants";
 const AddDeviceModal = ({show, onHide,onAddDevice}) => {
     const [vendor, setVendor] = useState('');
     const [ipAddress, setIpAddress] = useState('');
-    const [sshPort, setSshPort] = useState('');
+    const [sshPort, setSshPort] = useState('22');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [deviceName, setDeviceName] = useState('');
@@ -43,7 +43,7 @@ const AddDeviceModal = ({show, onHide,onAddDevice}) => {
                 if (res.ok) {
                     return res.json();
                 } else {
-                    throw new Error('Failed to add device');
+                    throw new Error("error");
                 }
             })
             .then(data => onAddDevice(data))
@@ -53,7 +53,7 @@ const AddDeviceModal = ({show, onHide,onAddDevice}) => {
         // Clear the form fields
         setVendor('');
         setIpAddress('');
-        setSshPort('');
+        setSshPort('22');
         setUsername('');
         setPassword('');
         setDeviceName('');
@@ -83,10 +83,6 @@ const AddDeviceModal = ({show, onHide,onAddDevice}) => {
                             <option value="">Select Vendor</option>
                             {vendorsLabels.map((v, i) => <option key={i} value={v}>{v}</option>)}
 
-                            {/*<option value="Cisco">Cisco</option>*/}
-                            {/*<option value="Juniper">Juniper</option>*/}
-                            {/*<option value="HP">HP</option>*/}
-                            {/* Add more vendor options */}
                         </Form.Control>
                     </Form.Group>
                     <Row>

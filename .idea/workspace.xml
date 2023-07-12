@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0628a0ee-e643-457f-84b7-4eb65011181d" name="Changes" comment="stage 2">
+    <list default="true" id="0628a0ee-e643-457f-84b7-4eb65011181d" name="Changes" comment="remove 2 warning in console.">
+      <change afterPath="$PROJECT_DIR$/src/assets/check_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/cisco_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/close_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/db_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/refresh_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/user_icon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styled-components/MainStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled-components/MainStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddDeviceModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddDeviceModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +55,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
     "ts.external.directory.path": "/Users/arsensaladikhanov/Documents/WEB/backup_tool_tma/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -67,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688326899979</updated>
       <workItem from="1688326901001" duration="28570000" />
-      <workItem from="1689071477695" duration="24511000" />
+      <workItem from="1689071477695" duration="27678000" />
     </task>
     <task id="LOCAL-00001" summary="added MIT license">
       <created>1688482024337</created>
@@ -97,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689098519769</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="remove 2 warning in console.">
+      <created>1689099894716</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689099894716</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +145,7 @@
     <MESSAGE value="added MIT license" />
     <MESSAGE value="stage 1" />
     <MESSAGE value="stage 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="stage 2" />
+    <MESSAGE value="remove 2 warning in console." />
+    <option name="LAST_COMMIT_MESSAGE" value="remove 2 warning in console." />
   </component>
 </project>

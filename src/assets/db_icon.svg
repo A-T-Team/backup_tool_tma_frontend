@@ -1,0 +1,10 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="lucide:database-backup">
+<g id="Group">
+<path id="Vector" d="M16 10.6667C22.6274 10.6667 28 8.8758 28 6.66666C28 4.45752 22.6274 2.66666 16 2.66666C9.37258 2.66666 4 4.45752 4 6.66666C4 8.8758 9.37258 10.6667 16 10.6667Z" stroke="#D7E1EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M4 6.66666V25.3333C4 27.2 8 28.9333 13.3333 29.3333" stroke="#D7E1EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M4 16C4 17.6 6.66667 19.3333 10.6667 20M28 6.66666V12M17.3333 26.6667C18.1729 27.786 19.3433 28.6129 20.6789 29.0301C22.0145 29.4473 23.4474 29.4337 24.7749 28.9912C26.1023 28.5487 27.2568 27.6998 28.0749 26.5647C28.8931 25.4296 29.3333 24.0659 29.3333 22.6667C29.3333 21.0754 28.7012 19.5492 27.576 18.424C26.4508 17.2988 24.9246 16.6667 23.3333 16.6667C21.56 16.6667 19.9467 17.3867 18.7867 18.5467L16 21.3333" stroke="#D7E1EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M16 16V21.3333H21.3333" stroke="#D7E1EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

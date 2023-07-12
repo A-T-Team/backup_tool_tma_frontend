@@ -14,13 +14,10 @@ function App() {
 
 
     return (
-
         <AppContainer fluid={true}>
             <Navbar/>
             <Main/>
         </AppContainer>
-
-
     );
 }
 

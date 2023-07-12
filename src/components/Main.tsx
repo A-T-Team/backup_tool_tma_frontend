@@ -18,9 +18,7 @@ const Main = () => {
 
     const handleAddDevice = (newDevice: Device) => {
         // Update the devices state with the new device
-
         setDevices(prevDevices => [...prevDevices, newDevice]);
-        ;
 
     };
     // devices.sort((a: Device, b: Device) => a.name.localeCompare(b.name));
