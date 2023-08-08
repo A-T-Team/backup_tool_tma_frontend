@@ -4,13 +4,15 @@ import {DarkModal} from "../styled-components/AddDeviceModalStyles";
 import {ip, port, vendorsLabels} from "../utils/constants";
 
 // @ts-ignore
-const AddDeviceModal = ({show, onHide,onAddDevice}) => {
+const AddDeviceModal = ({show, onHide, onAddDevice}) => {
     const [vendor, setVendor] = useState('');
     const [ipAddress, setIpAddress] = useState('');
     const [sshPort, setSshPort] = useState('22');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [deviceName, setDeviceName] = useState('');
+    const [loading, setLoading] = useState(false);
+    const [testConnectionMessage, setTestConnectionMessage] = useState('');
 
 
     const handleClose = () => {
@@ -62,7 +64,27 @@ const AddDeviceModal = ({show, onHide,onAddDevice}) => {
     };
 
     const handleTestConnection = () => {
+        setLoading(true);
         // Perform test connection functionality here
+        fetch(`http://${ip}:${port}/api/devices/availability`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    "name": deviceName,
+                    "vendor": vendor,
+                    "ip": ipAddress,
+                    "port": sshPort,
+                    "user": username,
+                    "password": password
+                })
+            }
+        )
+            .then(data => data.ok ? data.json() : new Error("Connection unsuccessful"))
+            .then(res => setTestConnectionMessage(res.message))
+            .catch(error => setTestConnectionMessage("Connection failed"))
+            .finally(() => setLoading(false));
         console.log('Test Connection');
     };
 
@@ -146,8 +168,9 @@ const AddDeviceModal = ({show, onHide,onAddDevice}) => {
                 </Form>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="secondary" onClick={handleTestConnection}>
-                    Test Connection
+                {loading && <div className="spinner-grow" role="status"/>}
+                <Button variant="secondary" onClick={handleTestConnection} disabled={loading}>
+                    {loading ? 'Testing...' : testConnectionMessage ? testConnectionMessage : 'Test Connection'}
                 </Button>
                 <Button variant="secondary" onClick={handleClose}>
                     Cancel
@@ -155,6 +178,9 @@ const AddDeviceModal = ({show, onHide,onAddDevice}) => {
                 <Button variant="primary" onClick={handleAddDevice}>
                     Save
                 </Button>
+
+
+
             </Modal.Footer>
         </DarkModal>
     );

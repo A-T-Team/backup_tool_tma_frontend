@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
             <NavContainer>
                 <AppIcon src={appIcon} alt={'vendor icon'}/>
-                <NavItem>APP NAME</NavItem>
+                <NavItem>Switch Backup internal tool</NavItem>
             </NavContainer>
     );
 };
