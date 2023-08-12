@@ -50,6 +50,7 @@ const Main = () => {
         <>
             {devices &&
                 <div>
+                    <div className="test_Olga"></div>
                     <Header onHide={onHide}/>
                     <AddDeviceModal show={showModal} onHide={onHide} onAddDevice={handleAddDevice}/>
                     <DeviceListContainer>
