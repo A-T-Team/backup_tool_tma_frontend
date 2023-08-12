@@ -15,7 +15,7 @@ export const NavContainer = styled.div`
 
 export const NavItem = styled(Col)`
   color: #D7E1EC;
-  font-size: 24px;
+  font-size: 24px; 
 `;
 
 export const AppIcon = styled.img`

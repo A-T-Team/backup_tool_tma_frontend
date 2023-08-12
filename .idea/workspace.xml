@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0628a0ee-e643-457f-84b7-4eb65011181d" name="Changes" comment="Added icons">
+    <list default="true" id="0628a0ee-e643-457f-84b7-4eb65011181d" name="Changes" comment="added something) back on track">
+      <change afterPath="$PROJECT_DIR$/src/components/classComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddDeviceModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddDeviceModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DeviceItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeviceItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styled-components/NavbarStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled-components/NavbarStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <workItem from="1689438816727" duration="6825000" />
       <workItem from="1689678105115" duration="43000" />
       <workItem from="1690887691669" duration="1152000" />
-      <workItem from="1691410911178" duration="1307000" />
+      <workItem from="1691410911178" duration="7458000" />
     </task>
     <task id="LOCAL-00001" summary="added MIT license">
       <created>1688482024337</created>
@@ -118,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689152268579</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added something) back on track">
+      <created>1691500110123</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691500110123</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +161,7 @@
     <MESSAGE value="stage 2" />
     <MESSAGE value="remove 2 warning in console." />
     <MESSAGE value="Added icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added icons" />
+    <MESSAGE value="added something) back on track" />
+    <option name="LAST_COMMIT_MESSAGE" value="added something) back on track" />
   </component>
 </project>
