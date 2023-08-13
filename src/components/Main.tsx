@@ -14,6 +14,7 @@ const Main = () => {
     // const deviceItems = Array(10).fill(device)
     const [showModal, setShowModal] = useState(false);
     const [devices, setDevices] = useState<Device[]>([]);
+    const [filteredDevices, setFilteredDevices] = useState<Device[]>([]);
     //TODO
     // const [sortCriteria, setSortCriteria] = useState<string | null>(null);
 
@@ -33,6 +34,7 @@ const Main = () => {
             })
             .then(data => {
                 setDevices(data);
+                setFilteredDevices(data);
             })
             .catch(error => console.log(error));
 
@@ -53,7 +55,7 @@ const Main = () => {
                 <div>
                     <Header onHide={onHide}/>
                     <AddDeviceModal show={showModal} onHide={onHide} onAddDevice={handleAddDevice}/>
-                    <SearchBar/>
+                    <SearchBar devices={devices} setFilteredDevices={setFilteredDevices}/>
                     <DeviceListContainer>
                         <ListHeaderContainer>
                             {headerLabels.map((label, i) => (
@@ -67,7 +69,7 @@ const Main = () => {
                                 </ListHeaderItem>
                             ))}
                         </ListHeaderContainer>
-                        {devices.map((d, i) =>
+                        {filteredDevices.map((d, i) =>
                             <DeviceItem key={i} device={d}/>
                         )}
                     </DeviceListContainer>
