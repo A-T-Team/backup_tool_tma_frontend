@@ -13,6 +13,7 @@ const SearchArea = styled.div`
   margin-left: 80px;
   margin-top: 36px;
   margin-right: 80px;
+  margin-bottom: 16px;
 `;
 const DevicesSearchBar = muiStyled(TextField)({
     '& label.Mui-focused': {
