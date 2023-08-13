@@ -5,6 +5,7 @@ import AddDeviceModal from "./AddDeviceModal";
 import Header from "./Header";
 import {DeviceListContainer, ListHeaderContainer, ListHeaderItem} from "../styled-components/MainStyles";
 import {Device} from "../utils/types";
+import SearchBar from "./SearchBar";
 
 
 const Main = () => {
@@ -52,6 +53,7 @@ const Main = () => {
                 <div>
                     <Header onHide={onHide}/>
                     <AddDeviceModal show={showModal} onHide={onHide} onAddDevice={handleAddDevice}/>
+                    <SearchBar/>
                     <DeviceListContainer>
                         <ListHeaderContainer>
                             {headerLabels.map((label, i) => (

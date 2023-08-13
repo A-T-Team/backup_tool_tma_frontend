@@ -1,17 +1,26 @@
 import React from 'react';
-import {HeaderWrapper, H1,StyledButton} from "../styled-components/HeaderStyles";
+import {DevicesHeader, DevicesParagraph, AddDeviceButton} from "../styled-components/HeaderStyles";
+import AddIcon from '@mui/icons-material/Add';
 
 interface Props {
     onHide: () => void;
 }
-const Header: React.FC<Props> = ({ onHide }) => {
+
+const Header: React.FC<Props> = ({onHide}) => {
 
     return (
-        <HeaderWrapper>
-            <H1>Devices</H1>
-            <StyledButton onClick={onHide} variant="primary">Add Device</StyledButton>
-        </HeaderWrapper>
-    );
+        <DevicesHeader>
+            <DevicesParagraph>
+                Devices
+            </DevicesParagraph>
+            <AddDeviceButton onClick={onHide} variant="contained" startIcon={<AddIcon fontSize="large"/>}> Add
+                Device </AddDeviceButton>
+
+
+        </DevicesHeader>
+    )
+
+
 };
 
 export default Header;
