@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0628a0ee-e643-457f-84b7-4eb65011181d" name="Changes" comment="Added icons">
-      <change afterPath="$PROJECT_DIR$/src/styled-components/SettingsStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Backups.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Backups.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DeviceWindow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeviceWindow.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Settings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Settings.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styled-components/BuckupsStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled-components/BuckupsStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styled-components/DeviceWindowStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled-components/DeviceWindowStyles.ts" afterDir="false" />
-    </list>
+    <list default="true" id="0628a0ee-e643-457f-84b7-4eb65011181d" name="Changes" comment="Added icons" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +78,7 @@
       <workItem from="1690887691669" duration="1152000" />
       <workItem from="1691410911178" duration="1307000" />
       <workItem from="1695466452539" duration="5459000" />
-      <workItem from="1695472053117" duration="17543000" />
+      <workItem from="1695472053117" duration="18136000" />
     </task>
     <task id="LOCAL-00001" summary="added MIT license">
       <created>1688482024337</created>
