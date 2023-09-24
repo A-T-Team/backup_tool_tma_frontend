@@ -5,11 +5,11 @@ import Navbar from "./components/Navbar";
 import {GlobalStyle, AppContainer} from "./styled-components/GlobalStyles"
 
 
+
 function App() {
 
 
     return (
-
         <AppContainer fluid={true}>
             <GlobalStyle/>
             <Navbar/>
