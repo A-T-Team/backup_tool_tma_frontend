@@ -2,6 +2,9 @@ import cisco from "../assets/cisco_icon.svg";
 import arista from "../assets/arista_icon.svg";
 import dell from "../assets/dell_icon.svg";
 import hp from "../assets/hp_icon.svg";
+import Devices from "../components/Devices";
+import DeviceCard from "../components/DeviceCard";
+import Pools from "../components/Pools";
 
 export const headerLabels = ["DEVICE NAME", "IP ADDRESS", "VENDOR", "STATUS", "LAST BACKUP"];
 export const defaultDevice = {

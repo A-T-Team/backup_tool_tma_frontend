@@ -13,7 +13,7 @@ import {faTimes} from '@fortawesome/free-solid-svg-icons';
 import Settings from "./Settings";
 import Backups from "./Backups";
 
-const DeviceWindow = () => {
+const DeviceCard = () => {
     const [activeTab, setActiveTab] = useState("backups");
     const handleTabClick = (tab: string) => {
         setActiveTab(tab)
@@ -45,4 +45,4 @@ const DeviceWindow = () => {
     );
 };
 
-export default DeviceWindow;
+export default DeviceCard;
