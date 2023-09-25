@@ -7,7 +7,7 @@ type PropsType = {
     setFilteredDevices: (devices: Device[]) => void;
 }
 
-function SearchBar({ devices, setFilteredDevices }: PropsType) {
+function SearchBar({devices, setFilteredDevices}: PropsType) {
     const [inputValue, setInputValue] = useState<string>('');
 
     const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
