@@ -7,6 +7,7 @@ import Error from "./Error";
 
 
 const Main = () => {
+
     return (
         <Routes>
             <Route path="/" element={<Pools/>}/>
