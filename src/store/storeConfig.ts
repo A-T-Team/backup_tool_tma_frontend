@@ -1,10 +1,11 @@
 import {configureStore} from "@reduxjs/toolkit";
 import devicesListReducer from "../slices/devicesListSlice";
 import deviceReducer from "../slices/deviceSlice";
+import poolsListReducer from "../slices/poolsListSlice";
 
 const store = configureStore({
     reducer: {
-        //pools: poolsReducer,
+        poolsList: poolsListReducer,
         //pool: poolReducer,
 
         devicesList: devicesListReducer,

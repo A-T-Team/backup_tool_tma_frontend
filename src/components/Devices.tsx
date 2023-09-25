@@ -24,12 +24,10 @@ const Devices = () => {
     };
 
     useEffect(() => {
-        console.log("get from Api")
         dispatch(getDevicesFromApi());
     }, [dispatch]);
 
     useEffect(() => {
-        console.log(" set in filterList")
         setFilteredDevices(devicesList);
     }, [devicesList]);
 

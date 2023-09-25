@@ -10,3 +10,13 @@ export const getDevicesFromApi = createAsyncThunk(
         return data;
     }
 );
+
+export const getPoolsFromApi = createAsyncThunk(
+    'pools/getPools',
+    async () => {
+        const res = await fetch(`http://${ip}:${port}/api/pools`);
+        const data = await res.json();
+        console.log(data);
+        return data;
+    }
+)
