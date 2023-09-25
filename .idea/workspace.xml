@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0628a0ee-e643-457f-84b7-4eb65011181d" name="Changes" comment="Added icons">
-      <change afterPath="$PROJECT_DIR$/src/components/Error.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apiActions/apiActions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/slices/deviceSlice.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/slices/devicesListSlice.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/storeConfig.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DeviceCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeviceCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DeviceItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeviceItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Devices.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Devices.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styled-components/DeviceItemStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled-components/DeviceItemStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -48,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/D/Web-java2022/backup_tool_tma_frontend/src/components",
+    "last_opened_file_path": "C:/D/Web-java2022/41-rtk-ts-weather-asyncthunk (1)",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,8 +65,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\D\Web-java2022\backup_tool_tma_frontend\src\slices" />
       <recent name="C:\D\Web-java2022\backup_tool_tma_frontend\src\components" />
       <recent name="C:\D\Web-java2022\backup_tool_tma_frontend\src\styled-components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\D\Web-java2022\backup_tool_tma_frontend\src" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.Debug Application">
