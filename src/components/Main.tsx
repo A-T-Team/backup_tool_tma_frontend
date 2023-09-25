@@ -2,7 +2,7 @@ import React from 'react';
 import {Route,  Routes} from "react-router-dom";
 import Devices from "./Devices";
 import DeviceCard from "./DeviceCard";
-import Pools from "./Pools";
+import Pools from "../components/Pool/Pools";
 import Error from "./Error";
 
 

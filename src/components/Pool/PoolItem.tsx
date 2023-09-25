@@ -4,10 +4,12 @@ import {
 } from "../../styled-components/PoolStyles/PoolItemStyles";
 import poolMenuButton from '../../assets/Pool/drop_down_dutton.png'
 import poolLogo from '../../assets/Pool/logo.png'
+import {useNavigate} from "react-router-dom";
 
 export function PoolItem() {
+    const navigate = useNavigate();
     return (
-        <PoolContainer>
+        <PoolContainer onClick = {() => (navigate(`/devices`))}>
             <PoolHeader>
                 <PoolLogoContainer>
                     <PoolLogo src={poolLogo}/>
