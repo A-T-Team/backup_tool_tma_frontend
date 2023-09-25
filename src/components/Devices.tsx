@@ -17,7 +17,6 @@ const Devices = () => {
     const [showModal, setShowModal] = useState(false);
     const [devices, setDevices] = useState<Device[]>([]);
     const [filteredDevices, setFilteredDevices] = useState<Device[]>([]);
-    const navigate = useNavigate();
 
     const handleAddDevice = (newDevice: Device) => {
         // Update the devices state with the new device
@@ -37,6 +36,8 @@ const Devices = () => {
                 setFilteredDevices(data);
             })
             .catch(error => console.log(error));
+
+        console.log(devices)
 
     }, []);
 
@@ -74,6 +75,7 @@ const Devices = () => {
                                 key={i}
                                 device={d}
                                 //onClick={navigate(`/devices/:poolId/${d.id}`)}
+                                //onClick={() => console.log(d.id)}
                             />
                         )}
                     </DeviceListContainer>

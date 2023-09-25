@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Device} from "../utils/types";
 import {DeviceItemContainer, DeviceField, VendorIcon, DeviceStatus} from "../styled-components/DeviceItemStyles";
 import {ip, port, vendorIconSet} from "../utils/constants";
+import {useNavigate} from "react-router-dom";
 
 
 interface Props {
@@ -12,6 +13,7 @@ const DeviceItem = ({device}: Props) => {
     const [connectionStatus, setConnectionStatus] = useState("");
     const {name, ip: ipAddress, vendor, port: sshPort, user, password} = device;
     const vendorIcon = vendorIconSet.get(device.vendor.toLowerCase());
+    const navigate = useNavigate();
 
     useEffect(() => {
             // Perform test connection functionality here
@@ -50,7 +52,9 @@ const DeviceItem = ({device}: Props) => {
 
     const lastBackup = "unknown";
     return (
-        <DeviceItemContainer>
+        <DeviceItemContainer
+            onClick={() => navigate(`/devices/${device.id}`)}
+        >
             <DeviceField>{name}</DeviceField>
             <DeviceField>{ipAddress}</DeviceField>
             <DeviceField>

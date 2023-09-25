@@ -10,6 +10,13 @@ export const DeviceItemContainer = styled(Row)`
   background-color: #1A2432;
   border-bottom: 1px solid #2A3A50;
   width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #233043;
+    /* Добавьте другие стили, которые вы хотите применить при наведении */
+  }
 `;
 
 export const DeviceField = styled(Col)`

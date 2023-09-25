@@ -1,20 +1,27 @@
 import React, {useState} from 'react';
 import {
-    Button, CloseIcon,
+    Button,
+    CloseIcon,
     Connect,
     DeviceConnect,
     DeviceContainer,
     DeviceData,
-    DeviceHeader, DeviceIcon, DeviceIP, DeviceItem, DeviceMenu,
-    DeviceTitle, Ip
+    DeviceHeader,
+    DeviceIcon,
+    DeviceIP,
+    DeviceItem,
+    DeviceMenu,
+    DeviceTitle,
+    Ip
 } from "../styled-components/DeviceWindowStyles";
-import {faCheck, faClose} from '@fortawesome/free-solid-svg-icons';
-import {faTimes} from '@fortawesome/free-solid-svg-icons';
+import {faCheck, faTimes} from '@fortawesome/free-solid-svg-icons';
 import Settings from "./Settings";
 import Backups from "./Backups";
+import {useNavigate} from "react-router-dom";
 
 const DeviceCard = () => {
     const [activeTab, setActiveTab] = useState("backups");
+    const navigate = useNavigate();
     const handleTabClick = (tab: string) => {
         setActiveTab(tab)
     };
@@ -30,12 +37,14 @@ const DeviceCard = () => {
                     <DeviceIP>IP Address:</DeviceIP>
                     <Ip>192.168.123.132</Ip>
                 </DeviceData>
-                <Button>
+                <Button
+                onClick = {()=> navigate(`/devices`)}>
                     <CloseIcon icon={faTimes}/>
                 </Button>
             </DeviceHeader>
             <DeviceMenu>
-                <DeviceItem onClick={() => handleTabClick('backups')} isActive={activeTab === 'backups'}>Backups</DeviceItem>
+                <DeviceItem onClick={() => handleTabClick('backups')}
+                            isActive={activeTab === 'backups'}>Backups</DeviceItem>
                 <DeviceItem onClick={() => handleTabClick('settings')}
                             isActive={activeTab === 'settings'}>Settings</DeviceItem>
             </DeviceMenu>
