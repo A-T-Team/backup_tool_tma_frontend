@@ -10,11 +10,11 @@ const DevicesHeader = styled.div`
   align-items: center;
   //background: #233043;
   justify-content: flex-end;
-  margin-left: 80px;
+  //margin-left: 80px;
   margin-top: 36px;
-  margin-right: 80px;
-  margin-bottom: 28px;
-  gap: 629px;
+  //margin-right: 84px;
+  margin-bottom: 36px;
+  gap: 545px;
 
 `;
 
@@ -27,8 +27,11 @@ const PoolParagraph = styled.p`
   line-height: 36px; /* 128.571% */
   letter-spacing: 0.56px;
   margin: 0;
+  text-align: center;
+  
 `
 const AddDeviceButton = muiStyled(Button)({
+    marginRight: '84px',
     color: '#D7E1EC',
     fontSize: '14px',
     padding: '10px 16px',

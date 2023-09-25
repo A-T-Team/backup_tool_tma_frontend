@@ -13,8 +13,7 @@ const PoolContainer = styled.div`
   border: 1px solid #2A3A50;
   background: #1E2939;
   height: 168px;
-  margin-left: 100px;
-  margin-bottom: 20px;
+
 
   &:hover {
     transform: translateY(-2px);
