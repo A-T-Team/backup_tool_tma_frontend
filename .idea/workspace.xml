@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0628a0ee-e643-457f-84b7-4eb65011181d" name="Changes" comment="Added icons">
+    <list default="true" id="0628a0ee-e643-457f-84b7-4eb65011181d" name="Changes" comment="Added PoolItem">
+      <change afterPath="$PROJECT_DIR$/src/components/Pool/Pools.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styled-components/PoolStyles/PoolsStyles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddDeviceModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddDeviceModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DeviceItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeviceItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styled-components/GlobalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled-components/GlobalStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styled-components/PoolStyles/PoolHeaderStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled-components/PoolStyles/PoolHeaderStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styled-components/PoolStyles/PoolItemStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled-components/PoolStyles/PoolItemStyles.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +23,21 @@
       <list>
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
       </list>
     </option>
   </component>
@@ -43,7 +60,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/arsensaladikhanov/Documents/WEB/backup_tool_tma&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/FullStack_Course/FRONT_END/backup_tool_tma_frontend/src/styled-components/PoolStyles&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -51,10 +68,29 @@
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/arsensaladikhanov/Documents/WEB/backup_tool_tma/node_modules/typescript/lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;F:\\FullStack_Course\\FRONT_END\\backup_tool_tma_frontend\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\FullStack_Course\FRONT_END\backup_tool_tma_frontend\src\styled-components\PoolStyles" />
+      <recent name="F:\FullStack_Course\FRONT_END\backup_tool_tma_frontend\src\components\Pool" />
+      <recent name="F:\FullStack_Course\FRONT_END\backup_tool_tma_frontend\src\components" />
+      <recent name="F:\FullStack_Course\FRONT_END\backup_tool_tma_frontend\src\styled-components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\FullStack_Course\FRONT_END\backup_tool_tma_frontend\src\components\Pool" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -75,6 +111,16 @@
       <workItem from="1689678105115" duration="43000" />
       <workItem from="1690887691669" duration="1152000" />
       <workItem from="1691410911178" duration="1307000" />
+      <workItem from="1691587498423" duration="7550000" />
+      <workItem from="1691849478633" duration="1660000" />
+      <workItem from="1691949498849" duration="1214000" />
+      <workItem from="1692121198375" duration="2719000" />
+      <workItem from="1692527109788" duration="17199000" />
+      <workItem from="1693681731245" duration="1612000" />
+      <workItem from="1693768668234" duration="613000" />
+      <workItem from="1695036313316" duration="1938000" />
+      <workItem from="1695483213410" duration="5704000" />
+      <workItem from="1695648240187" duration="1515000" />
     </task>
     <task id="LOCAL-00001" summary="added MIT license">
       <created>1688482024337</created>
@@ -118,7 +164,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689152268579</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added SearchBar MUI">
+      <created>1691850383250</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691850383250</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added PoolItem">
+      <created>1692638661790</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1692638661790</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +214,8 @@
     <MESSAGE value="stage 2" />
     <MESSAGE value="remove 2 warning in console." />
     <MESSAGE value="Added icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added icons" />
+    <MESSAGE value="Added SearchBar MUI" />
+    <MESSAGE value="Added PoolItem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added PoolItem" />
   </component>
 </project>

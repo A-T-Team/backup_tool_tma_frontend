@@ -13,5 +13,9 @@ const AppContainer = styled(Container)`
       padding: 0px;
     `;
 
+const PoolMain = styled.div`
+  display: flex;
+  justify-content: center;
+`
 
-export  {GlobalStyle, AppContainer};
+export {GlobalStyle, AppContainer, PoolMain};

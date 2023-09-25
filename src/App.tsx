@@ -2,7 +2,9 @@ import React from 'react';
 import './App.css';
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
-import {GlobalStyle, AppContainer} from "./styled-components/GlobalStyles"
+import {GlobalStyle, AppContainer, PoolMain} from "./styled-components/GlobalStyles"
+import PoolHeader from "./components/Pool/PoolHeader";
+import {Pools} from "./components/Pool/Pools";
 
 
 function App() {
@@ -13,7 +15,10 @@ function App() {
         <AppContainer fluid={true}>
             <GlobalStyle/>
             <Navbar/>
-            <Main/>
+
+            <Pools/>
+
+            {/*<Main/>*/}
         </AppContainer>
     );
 }
