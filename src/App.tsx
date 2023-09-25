@@ -7,11 +7,11 @@ import PoolHeader from "./components/Pool/PoolHeader";
 import {Pools} from "./components/Pool/Pools";
 
 
+
 function App() {
 
 
     return (
-
         <AppContainer fluid={true}>
             <GlobalStyle/>
             <Navbar/>

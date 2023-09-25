@@ -6,6 +6,7 @@ import Header from "./Header";
 import {DeviceListContainer, ListHeaderContainer, ListHeaderItem} from "../styled-components/MainStyles";
 import {Device} from "../utils/types";
 import SearchBar from "./SearchBar";
+import DeviceWindow from "./DeviceWindow";
 
 
 const Main = () => {
@@ -75,6 +76,7 @@ const Main = () => {
                     </DeviceListContainer>
                 </div>
             }
+            <DeviceWindow/>
         </>
     );
 
